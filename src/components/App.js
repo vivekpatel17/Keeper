@@ -3,11 +3,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
-// import notes from "./notes";
+import Notes from "./notes";
 
 
 export default function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(Notes);
 
   function addNote(newNote) {
     setNotes(prevNotes => {
@@ -41,16 +41,4 @@ export default function App() {
       <Footer />
     </div>
   );
-  // return (
-  //   <div>
-  //     <Header />
-  //     {notes.map( noteItem => <Note 
-  //         key = {noteItem.key}
-  //         title = {noteItem.title}
-  //         content = {noteItem.content}
-  //       />
-  //     )}
-  //     <Footer />
-  //   </div>
-  // );
 };

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-function CreateArea(props) {
+import classes from "./CreateArea.module.css";
+
+export default function CreateArea(props) {
   const [note, setNote] = useState({
     title: "",
     content: ""
@@ -28,7 +30,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form>
+      <form className={classes.form}>
         <input
           name="title"
           onChange={handleChange}
@@ -46,6 +48,4 @@ function CreateArea(props) {
       </form>
     </div>
   );
-}
-
-export default CreateArea;
+};

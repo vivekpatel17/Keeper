@@ -1,10 +1,12 @@
 import React from "react";
 
+import classes from "./Footer.module.css";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer>
-      <p>Copyright ⓒ {currentYear}</p>
+    <footer className={classes.footer}>
+    
     </footer>
   );
 };

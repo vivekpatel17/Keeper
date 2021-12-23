@@ -1,10 +1,10 @@
 import React from "react";
 
-// import "../styles.css"
+import classes from "./Header.module.css";
 
 export default function Header() {
   return (
-    <header>
+    <header className={classes.header}>
       <h1>Keeper</h1>
     </header>
   );
